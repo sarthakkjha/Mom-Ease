@@ -1,0 +1,90 @@
+.blog-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    /* margin: 0 auto; */
+    /* padding: 2rem; */
+    background: #fff;
+    height: 100vh;
+    /* justify-content: center; */
+    /* align-items: center; */
+  }
+
+  .blog-heading {
+    width: 100%;
+    min-height: 12vh; /* Ensure it has enough height */
+    /* background-color: firebrick; */
+    border: 2px solid #bbb;
+    /* display: flex; Make sure it centers the text */
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 1rem;
+    box-sizing: border-box; /* Ensures padding doesn’t break the layout */
+  }
+  
+  .blog-heading h1 {
+    /* color: white; */
+    font-size: 2rem;
+    text-align: center;
+    margin: 0; /* Removes default margin */
+    padding: 0;
+    color: #fe93ae;
+  }
+  
+  
+  .blog-image {
+    width: 90%;
+    max-height: 400px; /* Adjust for consistent image sizes */
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .blog-page p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: justify;
+    max-width: 800px;
+    color: #555;
+    padding: 1rem;
+  }
+  
+  .blog-meta {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+    font-style: italic;
+    margin-top: 1rem;
+    color: #777;
+  }
+  
+  /* 📌 Responsive Styles */
+  @media (max-width: 768px) {
+    .blog-page {
+      padding: 1rem;
+    }
+    .blog-heading{
+        min-height: 6vh;
+    }
+  
+    .blog-page h1 {
+      font-size: 2rem;
+    }
+  
+    .blog-image {
+      max-height: 250px;
+    }
+  
+    .blog-page p {
+      font-size: 1rem;
+      padding: 0.5rem;
+    }
+  
+    .blog-meta {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  

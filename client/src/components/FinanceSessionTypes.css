@@ -1,0 +1,75 @@
+.session-types-container {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    padding: 0 1rem;
+    margin-top: 80px; /* Increased top margin to account for fixed header */
+  }
+  
+  .session-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .session-option:hover {
+    transform: translateY(-5px);
+  }
+  
+  .session-circle {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.75rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .session-label {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.3;
+    font-weight: 500;
+  }
+  
+  .session-option.active .session-circle {
+    background-color: #FF5757;
+  }
+  
+  .session-option.active svg path {
+    stroke: #ffffff;
+  }
+  
+  @media (max-width: 768px) {
+    .session-types-container {
+        gap: 1.5rem;
+        margin-top: 70px; /* Slightly reduced margin for mobile */
+    }
+  
+    .session-circle {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+  
+    .session-label {
+        font-size: 0.875rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .session-types-container {
+        gap: 1rem;
+    }
+  
+    .session-circle {
+        width: 3rem;
+        height: 3rem;
+    }
+  }

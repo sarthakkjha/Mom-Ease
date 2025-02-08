@@ -1,0 +1,33 @@
+.search-bar {
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding: 1.2rem;
+    border: 2px solid var(--secondary-color);
+    border-radius: 25px;
+    font-size: 1rem;
+    transition: all 0.3s;
+    background-color: var(--white);
+    border: 1px solid #eaeaea;
+  }
+  
+  .search-bar input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 15px rgba(255, 107, 152, 0.1);
+  }
+  
+  .search-bar input::placeholder {
+    color: #999;
+  }
+  
+  @media (max-width: 768px) {
+    .search-bar input {
+      padding: 1rem;
+    }
+  }

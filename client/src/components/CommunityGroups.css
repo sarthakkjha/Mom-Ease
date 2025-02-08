@@ -1,0 +1,67 @@
+.community-section {
+    margin-bottom: 40px;
+  }
+  
+  .groups-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .group-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .group-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .group-icon {
+    font-size: 2.5em;
+    color: #ff69b4;
+    margin-bottom: 10px;
+  }
+  
+  .group-name {
+    margin: 0;
+    color: #333;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .group-members {
+    color: #666;
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .join-button {
+    background: #f874a9;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.1s ease-in-out;
+    width: 150px;
+  }
+  
+  .join-button:hover {
+    background: #ff1493;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.3);
+  }
+  
+  .join-button:active {
+    transform: translateY(0);
+  }

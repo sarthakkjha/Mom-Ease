@@ -1,0 +1,27 @@
+.networking-hub {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #fafafa;
+  }
+  
+  .main-content {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .section-title {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  @media (max-width: 768px) {
+    .networking-hub {
+      padding: 10px;
+    }
+  }

@@ -1,0 +1,11 @@
+
+*{
+    margin: 0.2rem;
+}
+.help-button, .events-list button{
+    background-color: #e18282;
+    color: aliceblue;
+}
+.help-button{
+    margin: 0 0.5rem;
+  }
